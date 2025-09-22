@@ -281,7 +281,7 @@ button {
 }
 
 .icon-container {
-      display: flex;             
+  display: flex;             
   align-items: center;        
   justify-content: center;   
   height: 112px;             
