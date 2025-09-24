@@ -334,6 +334,8 @@ button {
   line-height: 1.5;
 }
 
+
+
 .team-section {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -360,6 +362,65 @@ button {
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: #fff;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+}
+
+/* Первый элемент списка команды */
+.team-list .team-item:first-child {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Контейнер внутри первого элемента команды */
+.team-list .team-item:first-child .team-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Список соцсетей внутри первого элемента */
+.team-list .team-item:first-child .team-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Элементы списка соцсетей */
+.team-list .team-item:first-child .team-info ul li {
+  width: 40px;
+  height: 40px;
+}
+
+/* Ссылки соцсетей */
+.team-list .team-item:first-child .team-info ul li a {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color, #4d5ae5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover и focus для ссылок соцсетей */
+.team-list .team-item:first-child .team-info ul li a:hover,
+.team-list .team-item:first-child .team-info ul li a:focus {
+  background-color: #404bbf;
+}
+
+/* Иконки внутри ссылок */
+.team-list .team-item:first-child .team-info ul li a svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--icon-color, #f4f4fd);
 }
 
 
@@ -380,6 +441,41 @@ button {
   text-align: center;
   font-size: 16px;
   color: #434455;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
 }
 
 .portfolio-section {
