@@ -541,14 +541,6 @@ color: #2e2f42;
    vertical-align: bottom;
 }
 
-.footer {
-  background-color: #2e2f42;
-  color: #f4f4fd;
-  padding: 100px;
-  padding: 100px 0;
-}
-
-
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -606,6 +598,17 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+.footer {
+  background-color: #2e2f42;
+  color: #f4f4fd;
+  padding: 100px;
+  padding: 100px 0;
+}
+
+
+.footer .logo-link .logo-studio {
+  color: #f4f4fd;
+}
 
 .footer .logo-link {
   color: #4D5AE5; 
