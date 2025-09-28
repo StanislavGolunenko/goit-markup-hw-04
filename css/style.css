@@ -605,6 +605,12 @@ h1,h2,h3,h4,h5,h6,p {
   padding: 100px 0;
 }
 
+.footer-flex {
+  display: flex;       /* Ментора просил явно добавить flex */
+  align-items: baseline;
+  justify-content: space-between; /* распределяем блоки */
+}
+
 
 .footer .logo-link .logo-studio {
   color: #f4f4fd;
