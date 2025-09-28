@@ -516,6 +516,31 @@ color: #2e2f42;
    margin-bottom: 0; 
   }
 
+  .portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-info {
+  position: relative;
+  z-index: 2; /* текст поверх overlay */
+}
 
 .portfolio-info {
   padding: 32px 16px;
@@ -598,19 +623,14 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+
+
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
   padding: 100px;
   padding: 100px 0;
 }
-
-.footer-flex {
-  display: flex;       /* Ментора просил явно добавить flex */
-  align-items: baseline;
-  justify-content: space-between; /* распределяем блоки */
-}
-
 
 .footer .logo-link .logo-studio {
   color: #f4f4fd;
