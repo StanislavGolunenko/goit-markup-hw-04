@@ -653,6 +653,14 @@ h1,h2,h3,h4,h5,h6,p {
 .footer-info {
   margin-right: 120px;
 }
+
+.footer-flex {
+  display: flex;
+  justify-content: flex-start; /* или space-between, если нужно разнести блоки по краям */
+  align-items: flex-start;
+  gap: 40px; /* расстояние между блоками */
+}
+
 .social-title {
   font-weight: 500;
   font-size: 16px;
