@@ -627,13 +627,12 @@ h1,h2,h3,h4,h5,h6,p {
 .footer-info {
   margin-right: 120px;
 }
-
 .social-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--footer-text, #ffffff);
+  color: var(--white, #ffffff);
   margin-bottom: 16px;
 }
 
@@ -653,7 +652,7 @@ h1,h2,h3,h4,h5,h6,p {
 .social-link {
   width: 100%;
   height: 100%;
-  background-color: var(--accent-color, #4d5ae5);
+  background-color: var(--blue, #4d5ae5);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -667,10 +666,8 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .social-icon {
-  fill: var(--icon-color, #f4f4fd);
+  fill: var(--light, #f4f4fd);
 }
-
-
 
 
 
