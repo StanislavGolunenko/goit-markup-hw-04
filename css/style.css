@@ -735,5 +735,16 @@ h1,h2,h3,h4,h5,h6,p {
   fill: var(--icon-color, #f4f4fd);
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
+
 
 
